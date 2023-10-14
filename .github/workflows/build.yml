@@ -37,7 +37,7 @@ jobs:
       name: Sign app APK
       with:
         releaseDirectory: |
-          app/build/outputs/bundle/release
+          app/build/outputs/bundle/release/app-release.aab
         signingKeyBase64: ${{ secrets.SIGNING_KEY }}
         output: build/release/signed
         alias: ${{ secrets.ALIAS }}
@@ -55,4 +55,4 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: APP
-        path: app/build/outputs/bundle/release/app-release.aab
+        path: app/build/outputs/bundle/signed/app-release.aab
