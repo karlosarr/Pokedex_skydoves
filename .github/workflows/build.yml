@@ -36,25 +36,31 @@ jobs:
     - name: list AAB
       run: |
         ls -lsah app/build/outputs/bundle/release
-    - uses: Tlaster/android-sign@v1.2.2
+
+    - uses: noriban/sign-android-release@v3
       name: Sign app APK
+      # ID used to access action output
+      id: sign_app
       with:
-        releaseDirectory: |
-          app/build/outputs/bundle/release
+        releaseDirectory: app/build/outputs/apk/release
         signingKeyBase64: ${{ secrets.SIGNING_KEY }}
         alias: ${{ secrets.ALIAS }}
         keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
         keyPassword: ${{ secrets.KEY_PASSWORD }}
+      env:
+        # override default build-tools version (29.0.3) -- optional
+        BUILD_TOOLS_VERSION: "30.0.2"
+
     - name: upload artefact to App Center
       uses: wzieba/AppCenter-Github-Action@v1
       with:
         appName: karlosarr/pokedex
         token: ${{secrets.APP_CENTER_TOKEN}}
         group: Collaborators,Public
-        file: app/build/outputs/bundle/signed/app-release.aab
+        file: ${{steps.sign_app.outputs.signedReleaseFile}}
         notifyTesters: true
         debug: false
     - uses: actions/upload-artifact@v3
       with:
-        name: APP
-        path: app/build/outputs/bundle/signed/app-release.aab
+        name: Signed app bundle
+        path: ${{steps.sign_app.outputs.signedReleaseFile}}
