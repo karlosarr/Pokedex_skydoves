@@ -40,7 +40,7 @@ jobs:
     - name: upload artefact to App Center
       uses: wzieba/AppCenter-Github-Action@v1
       with:
-        appName: karlosarr/app
+        appName: karlosarr/pokedex
         token: ${{secrets.APP_CENTER_TOKEN}}
         group: Collaborators,Public
         file: app/build/outputs/bundle/release/app-release.aab
