@@ -33,7 +33,7 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew bundleRelease
-    - uses: Tlaster/android-sign@v1
+    - uses: Tlaster/android-sign@v1.2.2
       name: Sign app APK
       with:
         releaseDirectory: |
@@ -45,13 +45,14 @@ jobs:
         keyPassword: ${{ secrets.KEY_PASSWORD }}
       env:
         BUILD_TOOLS_VERSION: "30.0.2"
+    
     - name: upload artefact to App Center
       uses: wzieba/AppCenter-Github-Action@v1
       with:
         appName: karlosarr/pokedex
         token: ${{secrets.APP_CENTER_TOKEN}}
         group: Collaborators,Public
-        file: app/build/outputs/bundle/release/app-release.aab
+        file: app/build/outputs/bundle/signed/app-release.aab
         notifyTesters: true
         debug: false
     - uses: actions/upload-artifact@v3
