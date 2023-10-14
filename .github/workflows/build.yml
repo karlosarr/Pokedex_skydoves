@@ -33,11 +33,14 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew bundleRelease
+    - name: list AAB
+      run: |
+        ls -lsah app/build/outputs/bundle/release
     - uses: Tlaster/android-sign@v1.2.2
       name: Sign app APK
       with:
         releaseDirectory: |
-          app/build/outputs/bundle/release/app-release.aab
+          app/build/outputs/bundle/release
         signingKeyBase64: ${{ secrets.SIGNING_KEY }}
         output: build/release/signed
         alias: ${{ secrets.ALIAS }}
