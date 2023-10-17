@@ -46,7 +46,7 @@
 
     <provider
       android:name="androidx.startup.InitializationProvider"
-      android:authorities="com.skydoves.pokedex.androidx-startup"
+      android:authorities="com.karlosarr.pokedex.androidx-startup"
       android:exported="false"
       tools:node="merge">
 
