@@ -20,7 +20,6 @@ import org.jetbrains.kotlin.gradle.tasks.AbstractKotlinCompileTool
 
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-  id("com.android.application")
   id(libs.plugins.android.application.get().pluginId)
   id(libs.plugins.kotlin.android.get().pluginId)
   id(libs.plugins.kotlin.kapt.get().pluginId)
