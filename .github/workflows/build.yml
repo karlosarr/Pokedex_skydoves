@@ -60,13 +60,19 @@ jobs:
         file: ${{steps.sign_app.outputs.signedReleaseFile}}
         notifyTesters: true
         debug: false
-    - name: upload artifact to Firebase App Distribution
-      uses: wzieba/Firebase-Distribution-Github-Action@v1.7.0
+    - name: Distribute To Firebase App Distribution
+      uses: nickwph/firebase-app-distribution-action@v1.2.1
       with:
-        appId: ${{secrets.FIREBASE_APP_ID}}
-        serviceCredentialsFileContent: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
-        #groups: testers
         file: ${{steps.sign_app.outputs.signedReleaseFile}}
+        groups: testers
+        credentials-file: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
+    # - name: upload artifact to Firebase App Distribution
+    #   uses: wzieba/Firebase-Distribution-Github-Action@v1.7.0
+    #   with:
+    #     appId: ${{secrets.FIREBASE_APP_ID}}
+    #     serviceCredentialsFileContent: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
+    #     #groups: testers
+    #     file: ${{steps.sign_app.outputs.signedReleaseFile}}
     - uses: actions/upload-artifact@v3
       with:
         name: Signed app bundle
