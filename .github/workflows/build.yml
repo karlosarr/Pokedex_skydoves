@@ -65,7 +65,7 @@ jobs:
       with:
         appId: ${{secrets.FIREBASE_APP_ID}}
         serviceCredentialsFileContent: ${{ secrets.CREDENTIAL_FILE_CONTENT }}
-        groups: testers
+        #groups: testers
         file: ${{steps.sign_app.outputs.signedReleaseFile}}
     - uses: actions/upload-artifact@v3
       with:
