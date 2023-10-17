@@ -20,12 +20,14 @@ import org.jetbrains.kotlin.gradle.tasks.AbstractKotlinCompileTool
 
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
+  id("com.android.application")
   id(libs.plugins.android.application.get().pluginId)
   id(libs.plugins.kotlin.android.get().pluginId)
   id(libs.plugins.kotlin.kapt.get().pluginId)
   id(libs.plugins.ksp.get().pluginId)
   id(libs.plugins.kotlin.parcelize.get().pluginId)
   id(libs.plugins.hilt.plugin.get().pluginId)
+  id("com.google.gms.google-services")
 }
 
 android {
@@ -97,6 +99,13 @@ androidComponents {
 }
 
 dependencies {
+  // Import the Firebase BoM
+  implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+
+  // TODO: Add the dependencies for Firebase products you want to use
+  // When using the BoM, don't specify versions in Firebase dependencies
+  implementation("com.google.firebase:firebase-analytics-ktx")
+
   // modules
   implementation(projects.coreData)
 
