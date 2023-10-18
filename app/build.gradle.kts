@@ -31,10 +31,10 @@ plugins {
 
 android {
   compileSdk = Configuration.compileSdk
-  namespace = "com.karlosarr.pokedex"
+  namespace = "com.skydoves.pokedex"
 
   defaultConfig {
-    applicationId = "com.karlosarr.pokedex"
+    applicationId = "com.skydoves.pokedex"
     minSdk = Configuration.minSdk
     targetSdk = Configuration.targetSdk
     versionCode = Configuration.versionCode
