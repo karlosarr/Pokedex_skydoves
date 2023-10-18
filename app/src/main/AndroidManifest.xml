@@ -16,7 +16,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
-  package="com.karlosarr.pokedex">
+  package="dev.karlosarr.pokedex">
 
   <uses-permission android:name="android.permission.INTERNET" />
 
@@ -46,12 +46,12 @@
 
     <provider
       android:name="androidx.startup.InitializationProvider"
-      android:authorities="com.skydoves.pokedex.androidx-startup"
+      android:authorities="dev.karlosarr.pokedex.androidx-startup"
       android:exported="false"
       tools:node="merge">
 
       <meta-data
-        android:name="com.skydoves.pokedex.initializer.TimberInitializer"
+        android:name="dev.karlosarr.pokedex.initializer.TimberInitializer"
         android:value="androidx.startup" />
     </provider>
 
