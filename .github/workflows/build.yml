@@ -2,10 +2,10 @@ name: Create APP and publish
 
 on:
   push:
-      branches: [ "main", "cicd" ]
-
-#    tags:
-#      - '*.*.*'
+    tags:
+       - '*.*.*'
+#  push:
+#      branches: [ "main", "cicd" ]
 
 jobs:
   build:
