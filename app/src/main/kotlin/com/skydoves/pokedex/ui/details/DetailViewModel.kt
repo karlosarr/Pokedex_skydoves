@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.ui.details
+package dev.karlosarr.pokedex.ui.details
 
 import androidx.databinding.Bindable
 import androidx.lifecycle.ViewModel
@@ -23,8 +23,8 @@ import androidx.lifecycle.viewModelScope
 import com.skydoves.bindables.BindingViewModel
 import com.skydoves.bindables.asBindingProperty
 import com.skydoves.bindables.bindingProperty
-import com.skydoves.pokedex.core.model.PokemonInfo
-import com.skydoves.pokedex.core.repository.DetailRepository
+import dev.karlosarr.pokedex.core.model.PokemonInfo
+import dev.karlosarr.pokedex.core.repository.DetailRepository
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
 import kotlinx.coroutines.flow.Flow

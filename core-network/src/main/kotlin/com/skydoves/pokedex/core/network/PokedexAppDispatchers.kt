@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.network
+package dev.karlosarr.pokedex.core.network
 
 import javax.inject.Qualifier
 import kotlin.annotation.AnnotationRetention.RUNTIME

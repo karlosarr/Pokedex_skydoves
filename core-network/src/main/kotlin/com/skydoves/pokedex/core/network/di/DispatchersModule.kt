@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.network.di
+package dev.karlosarr.pokedex.core.network.di
 
-import com.skydoves.pokedex.core.network.Dispatcher
-import com.skydoves.pokedex.core.network.PokedexAppDispatchers
+import dev.karlosarr.pokedex.core.network.Dispatcher
+import dev.karlosarr.pokedex.core.network.PokedexAppDispatchers
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

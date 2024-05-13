@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.ui.main
+package dev.karlosarr.pokedex.ui.main
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.annotation.VisibleForTesting
 import com.skydoves.bindables.BindingActivity
-import com.skydoves.pokedex.R
-import com.skydoves.pokedex.databinding.ActivityMainBinding
+import dev.karlosarr.pokedex.R
+import dev.karlosarr.pokedex.databinding.ActivityMainBinding
 import com.skydoves.transformationlayout.onTransformationStartContainer
 import dagger.hilt.android.AndroidEntryPoint
 

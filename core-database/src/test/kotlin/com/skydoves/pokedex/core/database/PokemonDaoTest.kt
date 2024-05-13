@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.database
+package dev.karlosarr.pokedex.core.database
 
-import com.skydoves.pokedex.core.database.entitiy.mapper.asEntity
-import com.skydoves.pokedex.core.test.MockUtil.mockPokemon
-import com.skydoves.pokedex.core.test.MockUtil.mockPokemonList
+import dev.karlosarr.pokedex.core.database.entitiy.mapper.asEntity
+import dev.karlosarr.pokedex.core.test.MockUtil.mockPokemon
+import dev.karlosarr.pokedex.core.test.MockUtil.mockPokemonList
 import kotlinx.coroutines.runBlocking
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.core.Is.`is`

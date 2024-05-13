@@ -45,12 +45,12 @@
 
     <provider
       android:name="androidx.startup.InitializationProvider"
-      android:authorities="com.karlosarr.pokedex.androidx-startup"
+      android:authorities="dev.karlosarr.pokedex.androidx-startup"
       android:exported="false"
       tools:node="merge">
 
       <meta-data
-        android:name="com.skydoves.pokedex.initializer.TimberInitializer"
+        android:name="dev.karlosarr.pokedex.initializer.TimberInitializer"
         android:value="androidx.startup" />
     </provider>
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.utils
+package dev.karlosarr.pokedex.utils
 
 import android.graphics.Rect
 import android.view.View

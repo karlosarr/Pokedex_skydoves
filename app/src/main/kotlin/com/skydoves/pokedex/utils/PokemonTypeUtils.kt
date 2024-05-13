@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.utils
+package dev.karlosarr.pokedex.utils
 
-import com.skydoves.pokedex.R
+import dev.karlosarr.pokedex.R
 
 object PokemonTypeUtils {
 

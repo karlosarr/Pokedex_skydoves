@@ -22,11 +22,11 @@
 
     <variable
       name="vm"
-      type="com.skydoves.pokedex.ui.main.MainViewModel" />
+      type="dev.karlosarr.pokedex.ui.main.MainViewModel" />
 
     <variable
       name="adapter"
-      type="com.skydoves.pokedex.ui.main.PokemonAdapter" />
+      type="dev.karlosarr.pokedex.ui.main.PokemonAdapter" />
   </data>
 
   <androidx.constraintlayout.widget.ConstraintLayout

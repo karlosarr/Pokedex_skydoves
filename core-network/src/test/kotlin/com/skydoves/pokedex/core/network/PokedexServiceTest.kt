@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.network
+package dev.karlosarr.pokedex.core.network
 
-import com.skydoves.pokedex.core.network.service.PokedexService
+import dev.karlosarr.pokedex.core.network.service.PokedexService
 import com.skydoves.sandwich.ApiResponse
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest

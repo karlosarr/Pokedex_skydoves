@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.database
+package dev.karlosarr.pokedex.core.database
 
 import androidx.room.ProvidedTypeConverter
 import androidx.room.TypeConverter
-import com.skydoves.pokedex.core.model.PokemonInfo
+import dev.karlosarr.pokedex.core.model.PokemonInfo
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types

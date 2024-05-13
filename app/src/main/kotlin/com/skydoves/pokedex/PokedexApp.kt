@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex
+package dev.karlosarr.pokedex
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

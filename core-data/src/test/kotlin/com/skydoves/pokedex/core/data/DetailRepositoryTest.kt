@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.data
+package dev.karlosarr.pokedex.core.data
 
 import app.cash.turbine.test
-import com.skydoves.pokedex.core.database.PokemonInfoDao
-import com.skydoves.pokedex.core.database.entitiy.mapper.asEntity
-import com.skydoves.pokedex.core.network.service.PokedexClient
-import com.skydoves.pokedex.core.network.service.PokedexService
-import com.skydoves.pokedex.core.repository.DetailRepositoryImpl
-import com.skydoves.pokedex.core.test.MainCoroutinesRule
-import com.skydoves.pokedex.core.test.MockUtil.mockPokemonInfo
+import dev.karlosarr.pokedex.core.database.PokemonInfoDao
+import dev.karlosarr.pokedex.core.database.entitiy.mapper.asEntity
+import dev.karlosarr.pokedex.core.network.service.PokedexClient
+import dev.karlosarr.pokedex.core.network.service.PokedexService
+import dev.karlosarr.pokedex.core.repository.DetailRepositoryImpl
+import dev.karlosarr.pokedex.core.test.MainCoroutinesRule
+import dev.karlosarr.pokedex.core.test.MockUtil.mockPokemonInfo
 import com.skydoves.sandwich.ApiResponse
 import com.skydoves.sandwich.retrofit.responseOf
 import kotlinx.coroutines.test.runTest

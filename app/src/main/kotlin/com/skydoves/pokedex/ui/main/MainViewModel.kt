@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.ui.main
+package dev.karlosarr.pokedex.ui.main
 
 import androidx.annotation.MainThread
 import androidx.databinding.Bindable
@@ -22,8 +22,8 @@ import androidx.lifecycle.viewModelScope
 import com.skydoves.bindables.BindingViewModel
 import com.skydoves.bindables.asBindingProperty
 import com.skydoves.bindables.bindingProperty
-import com.skydoves.pokedex.core.model.Pokemon
-import com.skydoves.pokedex.core.repository.MainRepository
+import dev.karlosarr.pokedex.core.model.Pokemon
+import dev.karlosarr.pokedex.core.repository.MainRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.flatMapLatest

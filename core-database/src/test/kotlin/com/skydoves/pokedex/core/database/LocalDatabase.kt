@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.database
+package dev.karlosarr.pokedex.core.database
 
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider.getApplicationContext

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.test
+package dev.karlosarr.pokedex.core.test
 
-import com.skydoves.pokedex.core.model.Pokemon
-import com.skydoves.pokedex.core.model.PokemonInfo
+import dev.karlosarr.pokedex.core.model.Pokemon
+import dev.karlosarr.pokedex.core.model.PokemonInfo
 
 object MockUtil {
 

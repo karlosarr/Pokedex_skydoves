@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.database.entitiy.mapper
+package dev.karlosarr.pokedex.core.database.entitiy.mapper
 
-import com.skydoves.pokedex.core.database.entitiy.PokemonEntity
-import com.skydoves.pokedex.core.model.Pokemon
+import dev.karlosarr.pokedex.core.database.entitiy.PokemonEntity
+import dev.karlosarr.pokedex.core.model.Pokemon
 
 object PokemonEntityMapper : EntityMapper<List<Pokemon>, List<PokemonEntity>> {
 

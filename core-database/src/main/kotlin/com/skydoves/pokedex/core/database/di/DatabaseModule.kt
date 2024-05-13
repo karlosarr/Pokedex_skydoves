@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.database.di
+package dev.karlosarr.pokedex.core.database.di
 
 import android.app.Application
 import androidx.room.Room
-import com.skydoves.pokedex.core.database.PokedexDatabase
-import com.skydoves.pokedex.core.database.PokemonDao
-import com.skydoves.pokedex.core.database.PokemonInfoDao
-import com.skydoves.pokedex.core.database.TypeResponseConverter
+import dev.karlosarr.pokedex.core.database.PokedexDatabase
+import dev.karlosarr.pokedex.core.database.PokemonDao
+import dev.karlosarr.pokedex.core.database.PokemonInfoDao
+import dev.karlosarr.pokedex.core.database.TypeResponseConverter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module

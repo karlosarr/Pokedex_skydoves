@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.binding
+package dev.karlosarr.pokedex.binding
 
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.skydoves.baserecyclerviewadapter.RecyclerViewPaginator
 import com.skydoves.bindables.BindingListAdapter
-import com.skydoves.pokedex.ui.main.MainViewModel
+import dev.karlosarr.pokedex.ui.main.MainViewModel
 import com.skydoves.whatif.whatIfNotNullAs
 
 object RecyclerViewBinding {

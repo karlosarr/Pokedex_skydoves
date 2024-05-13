@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.binding
+package dev.karlosarr.pokedex.binding
 
 import android.graphics.Color
 import android.graphics.Typeface
@@ -32,9 +32,9 @@ import com.github.florent37.glidepalette.GlidePalette
 import com.google.android.material.card.MaterialCardView
 import com.skydoves.androidribbon.RibbonRecyclerView
 import com.skydoves.androidribbon.ribbonView
-import com.skydoves.pokedex.core.model.PokemonInfo
-import com.skydoves.pokedex.utils.PokemonTypeUtils
-import com.skydoves.pokedex.utils.SpacesItemDecoration
+import dev.karlosarr.pokedex.core.model.PokemonInfo
+import dev.karlosarr.pokedex.utils.PokemonTypeUtils
+import dev.karlosarr.pokedex.utils.SpacesItemDecoration
 import com.skydoves.progressview.ProgressView
 import com.skydoves.rainbow.Rainbow
 import com.skydoves.rainbow.RainbowOrientation

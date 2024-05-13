@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.database
+package dev.karlosarr.pokedex.core.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.skydoves.pokedex.core.database.entitiy.PokemonEntity
-import com.skydoves.pokedex.core.database.entitiy.PokemonInfoEntity
+import dev.karlosarr.pokedex.core.database.entitiy.PokemonEntity
+import dev.karlosarr.pokedex.core.database.entitiy.PokemonInfoEntity
 
 @Database(
   entities = [PokemonEntity::class, PokemonInfoEntity::class],

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.ui.details
+package dev.karlosarr.pokedex.ui.details
 
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -22,9 +22,9 @@ import androidx.annotation.VisibleForTesting
 import com.skydoves.bindables.BindingActivity
 import com.skydoves.bundler.bundleNonNull
 import com.skydoves.bundler.intentOf
-import com.skydoves.pokedex.R
-import com.skydoves.pokedex.core.model.Pokemon
-import com.skydoves.pokedex.databinding.ActivityDetailBinding
+import dev.karlosarr.pokedex.R
+import dev.karlosarr.pokedex.core.model.Pokemon
+import dev.karlosarr.pokedex.databinding.ActivityDetailBinding
 import com.skydoves.transformationlayout.TransformationCompat
 import com.skydoves.transformationlayout.TransformationCompat.onTransformationEndContainerApplyParams
 import com.skydoves.transformationlayout.TransformationLayout

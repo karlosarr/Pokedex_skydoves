@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.network.model.mapper
+package dev.karlosarr.pokedex.core.network.model.mapper
 
-import com.skydoves.pokedex.core.network.model.PokemonErrorResponse
+import dev.karlosarr.pokedex.core.network.model.PokemonErrorResponse
 import com.skydoves.sandwich.ApiResponse
 import com.skydoves.sandwich.mappers.ApiErrorModelMapper
 import com.skydoves.sandwich.message

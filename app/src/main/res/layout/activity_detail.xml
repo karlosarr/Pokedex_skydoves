@@ -22,11 +22,11 @@
 
     <variable
       name="pokemon"
-      type="com.skydoves.pokedex.core.model.Pokemon" />
+      type="dev.karlosarr.pokedex.core.model.Pokemon" />
 
     <variable
       name="vm"
-      type="com.skydoves.pokedex.ui.details.DetailViewModel" />
+      type="dev.karlosarr.pokedex.ui.details.DetailViewModel" />
   </data>
 
   <androidx.core.widget.NestedScrollView

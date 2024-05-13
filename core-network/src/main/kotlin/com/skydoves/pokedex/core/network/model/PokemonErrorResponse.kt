@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.network.model
+package dev.karlosarr.pokedex.core.network.model
 
 /**
  * A customized pokemon error response.

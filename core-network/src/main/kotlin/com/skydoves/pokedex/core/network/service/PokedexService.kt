@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.network.service
+package dev.karlosarr.pokedex.core.network.service
 
-import com.skydoves.pokedex.core.model.PokemonInfo
-import com.skydoves.pokedex.core.network.model.PokemonResponse
+import dev.karlosarr.pokedex.core.model.PokemonInfo
+import dev.karlosarr.pokedex.core.network.model.PokemonResponse
 import com.skydoves.sandwich.ApiResponse
 import retrofit2.http.GET
 import retrofit2.http.Path

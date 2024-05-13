@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.initializer
+package dev.karlosarr.pokedex.initializer
 
 import android.content.Context
 import androidx.startup.Initializer
-import com.skydoves.pokedex.BuildConfig
+import dev.karlosarr.pokedex.BuildConfig
 import timber.log.Timber
 
 class TimberInitializer : Initializer<Unit> {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.network.interceptor
+package dev.karlosarr.pokedex.core.network.interceptor
 
 import okhttp3.Interceptor
 import okhttp3.Response

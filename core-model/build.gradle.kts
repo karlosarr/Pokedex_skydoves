@@ -22,7 +22,7 @@ plugins {
 }
 
 android {
-  namespace = "com.skydoves.pokedex.core.model"
+  namespace = "dev.karlosarr.pokedex.core.model"
 }
 
 dependencies {

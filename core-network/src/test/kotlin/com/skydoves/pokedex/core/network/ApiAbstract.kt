@@ -16,10 +16,10 @@
 
 @file:OptIn(ExperimentalCoroutinesApi::class)
 
-package com.skydoves.pokedex.core.network
+package dev.karlosarr.pokedex.core.network
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.skydoves.pokedex.core.test.MainCoroutinesRule
+import dev.karlosarr.pokedex.core.test.MainCoroutinesRule
 import com.skydoves.sandwich.retrofit.adapters.ApiResponseCallAdapterFactory
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import okhttp3.mockwebserver.MockResponse

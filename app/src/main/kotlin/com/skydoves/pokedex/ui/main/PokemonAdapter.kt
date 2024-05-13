@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.ui.main
+package dev.karlosarr.pokedex.ui.main
 
 import android.os.SystemClock
 import android.view.ViewGroup
@@ -23,10 +23,10 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.NO_POSITION
 import com.skydoves.bindables.BindingListAdapter
 import com.skydoves.bindables.binding
-import com.skydoves.pokedex.R
-import com.skydoves.pokedex.core.model.Pokemon
-import com.skydoves.pokedex.databinding.ItemPokemonBinding
-import com.skydoves.pokedex.ui.details.DetailActivity
+import dev.karlosarr.pokedex.R
+import dev.karlosarr.pokedex.core.model.Pokemon
+import dev.karlosarr.pokedex.databinding.ItemPokemonBinding
+import dev.karlosarr.pokedex.ui.details.DetailActivity
 
 class PokemonAdapter : BindingListAdapter<Pokemon, PokemonAdapter.PokemonViewHolder>(diffUtil) {
 

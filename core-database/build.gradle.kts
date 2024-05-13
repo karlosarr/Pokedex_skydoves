@@ -21,7 +21,7 @@ plugins {
 }
 
 android {
-  namespace = "com.skydoves.pokedex.core.database"
+  namespace = "dev.karlosarr.pokedex.core.database"
 
   defaultConfig {
     // The schemas directory contains a schema file for each version of the Room database.

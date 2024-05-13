@@ -20,7 +20,7 @@ plugins {
 }
 
 android {
-  namespace = "com.skydoves.pokedex.core.test"
+  namespace = "dev.karlosarr.pokedex.core.test"
 }
 
 dependencies {

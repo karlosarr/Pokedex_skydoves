@@ -20,7 +20,7 @@ plugins {
 }
 
 android {
-  namespace = "com.skydoves.pokedex.benchmark"
+  namespace = "dev.karlosarr.pokedex.benchmark"
 
   kotlinOptions {
     jvmTarget = "11"

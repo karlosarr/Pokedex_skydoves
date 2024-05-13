@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.model
+package dev.karlosarr.pokedex.core.model
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass

@@ -17,7 +17,7 @@
 @file:Suppress("SpellCheckingInspection")
 @file:OptIn(ExperimentalCoroutinesApi::class)
 
-package com.skydoves.pokedex.core.test
+package dev.karlosarr.pokedex.core.test
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

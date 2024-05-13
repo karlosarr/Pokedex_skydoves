@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.network
+package dev.karlosarr.pokedex.core.network
 
 import com.skydoves.sandwich.ApiResponse
 import com.skydoves.sandwich.SandwichInitializer

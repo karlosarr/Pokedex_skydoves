@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.skydoves.pokedex.core.database
+package dev.karlosarr.pokedex.core.database
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.skydoves.pokedex.core.database.entitiy.PokemonInfoEntity
+import dev.karlosarr.pokedex.core.database.entitiy.PokemonInfoEntity
 
 @Dao
 interface PokemonInfoDao {

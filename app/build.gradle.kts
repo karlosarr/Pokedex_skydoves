@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 import com.android.build.gradle.internal.tasks.databinding.DataBindingGenBaseClassesTask
-import com.skydoves.pokedex.Configuration
+import dev.karlosarr.pokedex.Configuration
 import org.gradle.configurationcache.extensions.capitalized
 import org.jetbrains.kotlin.gradle.tasks.AbstractKotlinCompileTool
 
@@ -28,13 +28,13 @@ plugins {
 }
 
 android {
-  namespace = "com.skydoves.pokedex"
+  namespace = "dev.karlosarr.pokedex"
 
   defaultConfig {
-    applicationId = "com.skydoves.pokedex"
+    applicationId = "dev.karlosarr.pokedex"
     versionCode = Configuration.versionCode
     versionName = Configuration.versionName
-    testInstrumentationRunner = "com.skydoves.pokedex.AppTestRunner"
+    testInstrumentationRunner = "dev.karlosarr.pokedex.AppTestRunner"
   }
 
   buildFeatures {
