@@ -13,21 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import com.skydoves.pokedex.Configuration
 
-@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-  id(libs.plugins.android.library.get().pluginId)
-  id(libs.plugins.kotlin.android.get().pluginId)
-  id(libs.plugins.ksp.get().pluginId)
+  alias(libs.plugins.android.library)
+  alias(libs.plugins.kotlin.android)
+  alias(libs.plugins.ksp)
 }
 
 android {
-  compileSdk = Configuration.compileSdk
   namespace = "com.skydoves.pokedex.core.database"
 
   defaultConfig {
-    minSdk = Configuration.minSdk
     // The schemas directory contains a schema file for each version of the Room database.
     // This is required to enable Room auto migrations.
     // See https://developer.android.com/reference/kotlin/androidx/room/AutoMigration.
@@ -38,11 +34,6 @@ android {
 
   sourceSets.getByName("test") {
     assets.srcDir(files("$projectDir/schemas"))
-  }
-
-  compileOptions {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
   }
 }
 
