@@ -18,34 +18,23 @@ import com.skydoves.pokedex.Configuration
 import org.gradle.configurationcache.extensions.capitalized
 import org.jetbrains.kotlin.gradle.tasks.AbstractKotlinCompileTool
 
-@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-  id(libs.plugins.android.application.get().pluginId)
-  id(libs.plugins.kotlin.android.get().pluginId)
-  id(libs.plugins.kotlin.kapt.get().pluginId)
-  id(libs.plugins.ksp.get().pluginId)
-  id(libs.plugins.kotlin.parcelize.get().pluginId)
-  id(libs.plugins.hilt.plugin.get().pluginId)
-  id("com.google.gms.google-services")
+  alias(libs.plugins.android.application)
+  alias(libs.plugins.kotlin.android)
+  alias(libs.plugins.kotlin.kapt)
+  alias(libs.plugins.ksp)
+  alias(libs.plugins.kotlin.parcelize)
+  alias(libs.plugins.hilt.plugin)
 }
 
 android {
-  compileSdk = Configuration.compileSdk
   namespace = "com.skydoves.pokedex"
 
   defaultConfig {
     applicationId = "com.skydoves.pokedex"
-    minSdk = Configuration.minSdk
-    targetSdk = Configuration.targetSdk
     versionCode = Configuration.versionCode
     versionName = Configuration.versionName
-    vectorDrawables.useSupportLibrary = true
     testInstrumentationRunner = "com.skydoves.pokedex.AppTestRunner"
-  }
-
-  compileOptions {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
   }
 
   buildFeatures {
@@ -59,7 +48,12 @@ android {
 
   kotlin {
     sourceSets.configureEach {
-      kotlin.srcDir("$buildDir/generated/ksp/$name/kotlin/")
+      kotlin.srcDir(layout.buildDirectory.files("generated/ksp/$name/kotlin/"))
+    }
+    sourceSets.all {
+      languageSettings {
+        languageVersion = "2.0"
+      }
     }
   }
 
@@ -76,10 +70,6 @@ android {
       signingConfig = getByName("debug").signingConfig
       matchingFallbacks += listOf("release")
     }
-  }
-
-  lint {
-    abortOnError = false
   }
 }
 
@@ -158,8 +148,8 @@ dependencies {
   testImplementation(libs.junit)
   testImplementation(libs.turbine)
   testImplementation(libs.androidx.test.core)
+  testImplementation(libs.mockito.core)
   testImplementation(libs.mockito.kotlin)
-  testImplementation(libs.mockito.inline)
   testImplementation(libs.coroutines.test)
   androidTestImplementation(libs.truth)
   androidTestImplementation(libs.androidx.junit)

@@ -13,26 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import com.skydoves.pokedex.Configuration
 
-@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-  id(libs.plugins.android.library.get().pluginId)
-  id(libs.plugins.kotlin.android.get().pluginId)
+  alias(libs.plugins.android.library)
+  alias(libs.plugins.kotlin.android)
 }
 
 android {
-  compileSdk = Configuration.compileSdk
   namespace = "com.skydoves.pokedex.core.test"
-
-  defaultConfig {
-    minSdk = Configuration.minSdk
-  }
-
-  compileOptions {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
-  }
 }
 
 dependencies {
