@@ -13,30 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import com.skydoves.pokedex.Configuration
 
-@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-  id(libs.plugins.android.test.get().pluginId)
-  id(libs.plugins.kotlin.android.get().pluginId)
+  alias(libs.plugins.android.test)
+  alias(libs.plugins.kotlin.android)
 }
 
 android {
-  compileSdk = Configuration.compileSdk
   namespace = "com.skydoves.pokedex.benchmark"
-
-  compileOptions {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
-  }
 
   kotlinOptions {
     jvmTarget = "11"
   }
 
   defaultConfig {
-    minSdk = Configuration.minSdk
-    targetSdk = Configuration.compileSdk
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
 
@@ -64,6 +54,6 @@ dependencies {
 
 androidComponents {
   beforeVariants(selector().all()) {
-    it.enabled = it.buildType == "benchmark"
+    it.enable = it.buildType == "benchmark"
   }
 }
