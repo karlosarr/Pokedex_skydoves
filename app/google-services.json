@@ -44,9 +44,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:897901157282:android:18af0823c5184ea5c7b0fb",
+        "mobilesdk_app_id": "1:897901157282:android:f29a135910487019c7b0fb",
         "android_client_info": {
-          "package_name": "com.skydoves.pokedex"
+          "package_name": "dev.karlosarr.pokedex"
         }
       },
       "oauth_client": [
