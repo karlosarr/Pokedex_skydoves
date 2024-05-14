@@ -24,7 +24,7 @@ plugins {
   alias(libs.plugins.ksp) apply false
   alias(libs.plugins.hilt.plugin) apply false
   alias(libs.plugins.spotless)
-  id("com.google.gms.google-services") version "4.4.0" apply false
+  id("com.google.gms.google-services") version "4.4.1" apply false
 }
 
 private typealias AndroidExtension = com.android.build.api.dsl.CommonExtension<*, *, *, *, *, *>
