@@ -16,8 +16,8 @@
 
 package dev.karlosarr.pokedex.core.network
 
-import dev.karlosarr.pokedex.core.network.service.PokedexService
 import com.skydoves.sandwich.ApiResponse
+import dev.karlosarr.pokedex.core.network.service.PokedexService
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
 import org.hamcrest.CoreMatchers.`is`

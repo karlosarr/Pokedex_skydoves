@@ -22,11 +22,11 @@ import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.google.common.truth.Truth.assertThat
-import dev.karlosarr.pokedex.core.test.MockUtil
-import dev.karlosarr.pokedex.ui.details.DetailActivity
 import com.skydoves.transformationlayout.TransformationLayout
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
+import dev.karlosarr.pokedex.core.test.MockUtil
+import dev.karlosarr.pokedex.ui.details.DetailActivity
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith

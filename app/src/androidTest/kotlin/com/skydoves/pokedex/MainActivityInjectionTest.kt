@@ -20,9 +20,9 @@ import androidx.lifecycle.Lifecycle
 import androidx.test.core.app.ActivityScenario
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.google.common.truth.Truth.assertThat
-import dev.karlosarr.pokedex.ui.main.MainActivity
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
+import dev.karlosarr.pokedex.ui.main.MainActivity
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith

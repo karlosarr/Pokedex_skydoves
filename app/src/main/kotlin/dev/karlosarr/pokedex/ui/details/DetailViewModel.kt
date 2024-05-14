@@ -23,10 +23,10 @@ import androidx.lifecycle.viewModelScope
 import com.skydoves.bindables.BindingViewModel
 import com.skydoves.bindables.asBindingProperty
 import com.skydoves.bindables.bindingProperty
-import dev.karlosarr.pokedex.core.model.PokemonInfo
-import dev.karlosarr.pokedex.core.repository.DetailRepository
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
+import dev.karlosarr.pokedex.core.model.PokemonInfo
+import dev.karlosarr.pokedex.core.repository.DetailRepository
 import kotlinx.coroutines.flow.Flow
 import timber.log.Timber
 

@@ -22,13 +22,13 @@ import androidx.annotation.VisibleForTesting
 import com.skydoves.bindables.BindingActivity
 import com.skydoves.bundler.bundleNonNull
 import com.skydoves.bundler.intentOf
-import dev.karlosarr.pokedex.R
-import dev.karlosarr.pokedex.core.model.Pokemon
-import dev.karlosarr.pokedex.databinding.ActivityDetailBinding
 import com.skydoves.transformationlayout.TransformationCompat
 import com.skydoves.transformationlayout.TransformationCompat.onTransformationEndContainerApplyParams
 import com.skydoves.transformationlayout.TransformationLayout
 import dagger.hilt.android.AndroidEntryPoint
+import dev.karlosarr.pokedex.R
+import dev.karlosarr.pokedex.core.model.Pokemon
+import dev.karlosarr.pokedex.databinding.ActivityDetailBinding
 import javax.inject.Inject
 
 @AndroidEntryPoint

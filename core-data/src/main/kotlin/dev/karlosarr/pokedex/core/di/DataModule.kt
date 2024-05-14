@@ -16,14 +16,14 @@
 
 package dev.karlosarr.pokedex.core.di
 
-import dev.karlosarr.pokedex.core.repository.DetailRepository
-import dev.karlosarr.pokedex.core.repository.DetailRepositoryImpl
-import dev.karlosarr.pokedex.core.repository.MainRepository
-import dev.karlosarr.pokedex.core.repository.MainRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import dev.karlosarr.pokedex.core.repository.DetailRepository
+import dev.karlosarr.pokedex.core.repository.DetailRepositoryImpl
+import dev.karlosarr.pokedex.core.repository.MainRepository
+import dev.karlosarr.pokedex.core.repository.MainRepositoryImpl
 
 @Module
 @InstallIn(SingletonComponent::class)

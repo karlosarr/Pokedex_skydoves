@@ -16,11 +16,11 @@
 
 package dev.karlosarr.pokedex.core.network.model.mapper
 
-import dev.karlosarr.pokedex.core.network.model.PokemonErrorResponse
 import com.skydoves.sandwich.ApiResponse
 import com.skydoves.sandwich.mappers.ApiErrorModelMapper
 import com.skydoves.sandwich.message
 import com.skydoves.sandwich.retrofit.statusCode
+import dev.karlosarr.pokedex.core.network.model.PokemonErrorResponse
 
 /**
  * A mapper for mapping [ApiResponse.Failure.Error] response as custom [PokemonErrorResponse] instance.

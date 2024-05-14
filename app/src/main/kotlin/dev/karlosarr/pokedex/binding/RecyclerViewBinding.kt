@@ -20,8 +20,8 @@ import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.skydoves.baserecyclerviewadapter.RecyclerViewPaginator
 import com.skydoves.bindables.BindingListAdapter
-import dev.karlosarr.pokedex.ui.main.MainViewModel
 import com.skydoves.whatif.whatIfNotNullAs
+import dev.karlosarr.pokedex.ui.main.MainViewModel
 
 object RecyclerViewBinding {
 

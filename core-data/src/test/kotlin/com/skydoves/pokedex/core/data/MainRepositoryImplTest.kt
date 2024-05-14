@@ -17,6 +17,8 @@
 package dev.karlosarr.pokedex.core.data
 
 import app.cash.turbine.test
+import com.skydoves.sandwich.ApiResponse
+import com.skydoves.sandwich.retrofit.responseOf
 import dev.karlosarr.pokedex.core.database.PokemonDao
 import dev.karlosarr.pokedex.core.database.entitiy.mapper.asEntity
 import dev.karlosarr.pokedex.core.network.model.PokemonResponse
@@ -25,8 +27,6 @@ import dev.karlosarr.pokedex.core.network.service.PokedexService
 import dev.karlosarr.pokedex.core.repository.MainRepositoryImpl
 import dev.karlosarr.pokedex.core.test.MainCoroutinesRule
 import dev.karlosarr.pokedex.core.test.MockUtil.mockPokemonList
-import com.skydoves.sandwich.ApiResponse
-import com.skydoves.sandwich.retrofit.responseOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
 import org.junit.Before

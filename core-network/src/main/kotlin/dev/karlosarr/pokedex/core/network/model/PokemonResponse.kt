@@ -16,9 +16,9 @@
 
 package dev.karlosarr.pokedex.core.network.model
 
-import dev.karlosarr.pokedex.core.model.Pokemon
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import dev.karlosarr.pokedex.core.model.Pokemon
 
 @JsonClass(generateAdapter = true)
 data class PokemonResponse(

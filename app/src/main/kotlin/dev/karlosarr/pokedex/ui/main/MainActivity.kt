@@ -20,10 +20,10 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.annotation.VisibleForTesting
 import com.skydoves.bindables.BindingActivity
-import dev.karlosarr.pokedex.R
-import dev.karlosarr.pokedex.databinding.ActivityMainBinding
 import com.skydoves.transformationlayout.onTransformationStartContainer
 import dagger.hilt.android.AndroidEntryPoint
+import dev.karlosarr.pokedex.R
+import dev.karlosarr.pokedex.databinding.ActivityMainBinding
 
 @AndroidEntryPoint
 class MainActivity : BindingActivity<ActivityMainBinding>(R.layout.activity_main) {

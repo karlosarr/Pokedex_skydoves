@@ -16,9 +16,9 @@
 
 package dev.karlosarr.pokedex.core.network.service
 
+import com.skydoves.sandwich.ApiResponse
 import dev.karlosarr.pokedex.core.model.PokemonInfo
 import dev.karlosarr.pokedex.core.network.model.PokemonResponse
-import com.skydoves.sandwich.ApiResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query

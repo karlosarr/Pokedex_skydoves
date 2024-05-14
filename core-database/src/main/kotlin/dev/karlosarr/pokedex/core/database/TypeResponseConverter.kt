@@ -18,10 +18,10 @@ package dev.karlosarr.pokedex.core.database
 
 import androidx.room.ProvidedTypeConverter
 import androidx.room.TypeConverter
-import dev.karlosarr.pokedex.core.model.PokemonInfo
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
+import dev.karlosarr.pokedex.core.model.PokemonInfo
 import javax.inject.Inject
 
 @ProvidedTypeConverter

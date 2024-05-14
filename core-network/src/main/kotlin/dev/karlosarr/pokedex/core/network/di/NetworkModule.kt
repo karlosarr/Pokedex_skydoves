@@ -16,14 +16,14 @@
 
 package dev.karlosarr.pokedex.core.network.di
 
-import dev.karlosarr.pokedex.core.network.interceptor.HttpRequestInterceptor
-import dev.karlosarr.pokedex.core.network.service.PokedexClient
-import dev.karlosarr.pokedex.core.network.service.PokedexService
 import com.skydoves.sandwich.retrofit.adapters.ApiResponseCallAdapterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import dev.karlosarr.pokedex.core.network.interceptor.HttpRequestInterceptor
+import dev.karlosarr.pokedex.core.network.service.PokedexClient
+import dev.karlosarr.pokedex.core.network.service.PokedexService
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory

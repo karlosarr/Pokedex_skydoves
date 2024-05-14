@@ -16,12 +16,12 @@
 
 package dev.karlosarr.pokedex.core.network.di
 
-import dev.karlosarr.pokedex.core.network.Dispatcher
-import dev.karlosarr.pokedex.core.network.PokedexAppDispatchers
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import dev.karlosarr.pokedex.core.network.Dispatcher
+import dev.karlosarr.pokedex.core.network.PokedexAppDispatchers
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 

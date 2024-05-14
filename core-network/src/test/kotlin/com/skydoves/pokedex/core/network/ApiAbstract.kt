@@ -19,8 +19,8 @@
 package dev.karlosarr.pokedex.core.network
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import dev.karlosarr.pokedex.core.test.MainCoroutinesRule
 import com.skydoves.sandwich.retrofit.adapters.ApiResponseCallAdapterFactory
+import dev.karlosarr.pokedex.core.test.MainCoroutinesRule
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
